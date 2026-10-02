@@ -22,5 +22,5 @@ draw.text((20, 95), now.strftime("%H:%M"), font=font_big, fill=0)
 draw.text((20, 160), now.strftime("%A, %d.%m.%Y"), font=font_small, fill=0)
 draw.text((20, 230), "Display-Test", font=font_small, fill=0)
 
-image.save("agenda.png")
-print("Bild erstellt: agenda.png")
+image.save("/home/luc/Cloud_RPI/pic/4in2.bmp")
+print("Bild erstellt: /home/luc/Cloud_RPI/pic/4in2.bmp")
