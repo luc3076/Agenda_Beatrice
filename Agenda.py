@@ -1,7 +1,26 @@
 from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
+
+WIDTH = 400
+HEIGHT = 300
+
+image = Image.new("1", (WIDTH, HEIGHT), 255)
+draw = ImageDraw.Draw(image)
+
+font_big = ImageFont.truetype(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 42
+)
+font_small = ImageFont.truetype(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24
+)
 
 now = datetime.now()
 
-print("Agenda Beatrice")
-print(now.strftime("%A, %d.%m.%Y"))
-print(now.strftime("%H:%M"))
+draw.text((20, 25), "Agenda Beatrice", font=font_small, fill=0)
+draw.line((20, 65, 380, 65), fill=0, width=2)
+draw.text((20, 95), now.strftime("%H:%M"), font=font_big, fill=0)
+draw.text((20, 160), now.strftime("%A, %d.%m.%Y"), font=font_small, fill=0)
+draw.text((20, 230), "Display-Test", font=font_small, fill=0)
+
+image.save("agenda.png")
+print("Bild erstellt: agenda.png")
