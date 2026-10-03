@@ -41,13 +41,13 @@ font_small = ImageFont.truetype(
 now = datetime.now()
 
 wochenplan = {
-    0: "Heute 09:00 Altersheim treff", #Montag
-    1: "Heute 10:00 Claudia Zmittag", #Dienstag
-    2: "Heute Keine Termine", #Mittwoch
-    3: "Heute 17:00 Znacht bei Reto", #Donnerstag
-    4: "Heute Keine Termine", #Freitag
-    5: "Heute 09:00 kommt Reto vorbei", #Samstag
-    6: "Heute 12:00 Zmittag mit Luc", #Sonntag
+    0: "Heute um 09:00 Altersheim treff", #Montag
+    1: "Heute um 10:00 Claudia Zmittag", #Dienstag
+    2: "Heute um Keine Termine", #Mittwoch
+    3: "Heute um 17:00 Znacht bei Reto", #Donnerstag
+    4: "Heute um Keine Termine", #Freitag
+    5: "Heute um 09:00 kommt Reto vorbei", #Samstag
+    6: "Heute um 12:00 Zmittag mit Luc", #Sonntag
 }
 
 heutiger_text = wochenplan.get(now.weekday(), "Keine Termine")
