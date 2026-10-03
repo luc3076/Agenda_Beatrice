@@ -43,7 +43,7 @@ now = datetime.now()
 wochenplan = {
     0: "Heute um 09:00 Altersheim treff", #Montag
     1: "Heute um 10:00 Claudia Zmittag", #Dienstag
-    2: "Heute um Keine Termine", #Mittwoch
+    2: "Heute Keine Termine", #Mittwoch
     3: "Heute um 17:00 Znacht bei Reto", #Donnerstag
     4: "Heute um Keine Termine", #Freitag
     5: "Heute um 09:00 kommt Reto vorbei", #Samstag
