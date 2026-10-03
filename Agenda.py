@@ -41,13 +41,13 @@ font_small = ImageFont.truetype(
 now = datetime.now()
 
 wochenplan = {
-    0: "Montag: Schule 8 Uhr",
-    1: "Dienstag: Klavier 15 Uhr",
-    2: "Mittwoch: Keine Termine",
-    3: "Donnerstag: Arzt 10 Uhr",
-    4: "Freitag: Sport 17 Uhr",
-    5: "Samstag: Familienzeit",
-    6: "Sonntag: Ruhetag",
+    0: "Schule 8 Uhr", //Montag
+    1: "Klavier 15 Uhr", //Dienstag
+    2: "Keine Termine", //Mittwoch
+    3: "Arzt 10 Uhr", //Donnerstag
+    4: "Sport 17 Uhr", //Freitag
+    5: "Familienzeit", //Samstag
+    6: "Ruhetag", //Sonntag
 }
 
 heutiger_text = wochenplan.get(now.weekday(), "Keine Termine")
