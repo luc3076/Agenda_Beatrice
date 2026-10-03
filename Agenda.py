@@ -46,7 +46,8 @@ wochenplan = {
     2: "Heute Keine Termine", #Mittwoch
     3: "Heute um 17:00 Znacht bei Reto", #Donnerstag
     4: "Heute um Keine Termine", #Freitag
-    5: "Heute um 09:00 kommt Reto vorbei", #Samstag
+    5: "Heute um 10:00 Einkaufen
+    Heute um 18:00 BBQ bei Reto", #Samstag
     6: "Heute um 12:00 Zmittag mit Luc", #Sonntag
 }
 
