@@ -1,7 +1,7 @@
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
-locale.setlocale(locale.LC_TIME, "de_DE.UTF-8")
+locale.setlocale(locale.LC_TIME, "de_DE.uft8")
 
 WIDTH = 300
 HEIGHT = 400
