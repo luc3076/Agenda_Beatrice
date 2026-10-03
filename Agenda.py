@@ -6,23 +6,26 @@ locale.setlocale(locale.LC_TIME, "de_DE.utf8")
 
 
 def wrap_text(text, font, max_width, draw):
-    words = text.split()
-    lines = []
-    current_line = []
+    paragraphs = text.splitlines()
+    wrapped_lines = []
 
-    for word in words:
-        test_line = " ".join(current_line + [word])
-        if draw.textlength(test_line, font=font) <= max_width:
-            current_line.append(word)
-        else:
-            if current_line:
-                lines.append(" ".join(current_line))
-            current_line = [word]
+    for paragraph in paragraphs:
+        words = paragraph.split()
+        current_line = []
 
-    if current_line:
-        lines.append(" ".join(current_line))
+        for word in words:
+            test_line = " ".join(current_line + [word])
+            if draw.textlength(test_line, font=font) <= max_width:
+                current_line.append(word)
+            else:
+                if current_line:
+                    wrapped_lines.append(" ".join(current_line))
+                current_line = [word]
 
-    return "\n".join(lines)
+        if current_line:
+            wrapped_lines.append(" ".join(current_line))
+
+    return "\n".join(wrapped_lines)
 
 
 WIDTH = 300
@@ -46,7 +49,7 @@ wochenplan = {
     2: "Heute Keine Termine", #Mittwoch
     3: "Heute um 17:00 Znacht bei Reto", #Donnerstag
     4: "Heute um Keine Termine", #Freitag
-    5: "Heute um 10:00 Einkaufen \n Heute um 18:00 BBQ bei Reto", #Samstag
+    5: "Heute um 10:00 Einkaufen\nHeute um 18:00 BBQ bei Reto", #Samstag
     6: "Heute um 12:00 Zmittag mit Luc", #Sonntag
 }
 
