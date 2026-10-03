@@ -1,8 +1,8 @@
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
-WIDTH = 400
-HEIGHT = 300
+WIDTH = 300
+HEIGHT = 400
 
 image = Image.new("1", (WIDTH, HEIGHT), 255)
 draw = ImageDraw.Draw(image)
