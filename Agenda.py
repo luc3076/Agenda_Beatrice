@@ -51,7 +51,7 @@ wochenplan = {
 }
 
 heutiger_text = wochenplan.get(now.weekday(), "Keine Termine")
-heutiger_text = wrap_text(heutiger_text, font_big, 260, draw)
+heutiger_text = wrap_text(heutiger_text, font_small, 260, draw)
 
 draw.text((20, 25), "Agenda Béatrice", font=font_small, fill=0)
 draw.line((20, 65, 280, 65), fill=0, width=2)
