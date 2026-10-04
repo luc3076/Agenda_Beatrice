@@ -50,7 +50,7 @@ wochenplan = {
     3: "Heute um 17:00 Znacht bei Reto", #Donnerstag
     4: "Heute um Keine Termine", #Freitag
     5: "Heute um 09:00 Laufen mit J\nHeute um 18:00 BBQ bei Reto", #Samstag
-    6: "Heute um 19:00 Znacht bei Reto", #Sonntag
+    6: "Heute um 21:00 Znacht bei Reto", #Sonntag
 }
 
 heutiger_text = wochenplan.get(now.weekday(), "Keine Termine")
