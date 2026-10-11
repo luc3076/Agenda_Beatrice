@@ -56,11 +56,11 @@ wochenplan = {
 heutiger_text = wochenplan.get(now.weekday(), "Keine Termine")
 heutiger_text = wrap_text(heutiger_text, font_small, 260, draw)
 
-draw.text((20, 25), "Agenda Béatrice", font=font_small, fill=0)
-draw.line((20, 65, 280, 65), fill=0, width=2)
-draw.text((20, 95), now.strftime("%A"), font=font_small, fill=0)
-draw.text((20, 130), now.strftime("%d.%m.%Y"), font=font_big, fill=0)
-draw.multiline_text((20, 210), heutiger_text, font=font_small, fill=0, spacing=6)
+draw.text((15, 15), "Agenda Béatrice", font=font_small, fill=0)
+draw.line((15, 65, 280, 65), fill=0, width=2)
+draw.text((15, 95), now.strftime("%A"), font=font_small, fill=0)
+draw.text((15, 130), now.strftime("%d.%m.%Y"), font=font_big, fill=0)
+draw.multiline_text((15, 210), heutiger_text, font=font_small, fill=0, spacing=6)
 
 image.save("/home/luc/Cloud_RPI/pic/4in2.bmp")
 print("Bild erstellt: /home/luc/Cloud_RPI/pic/4in2.bmp")
